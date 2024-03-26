@@ -10,7 +10,7 @@ class GUI:
         self.main_window.title("Registration Form")    
 
         title_font = ("Arial", 20, "bold")
-        register_font = ("Arial", 15, "bold")
+        register_font = ("Arial", 15)
 
         self.label1 = tkinter.Label(self.main_window, text = "Responsive Registration", font = title_font)
         self.label2 = tkinter.Label(self.main_window, text = "Form", font = title_font)    
@@ -92,7 +92,7 @@ class GUI:
         self.sub_var = tkinter.IntVar()
 
         self.terms = tkinter.Checkbutton(self.term_frame, text = "I agree with the terms and conditions", variable = self.term_var)
-        self.subs = tkinter.Checkbutton(self.sub_frame, text = "I want to recive the news letter", variable = self.sub_var)
+        self.subs = tkinter.Checkbutton(self.sub_frame, text = "I want to receive the news letter", variable = self.sub_var)
 
         self.terms.pack()
         self.subs.pack()
@@ -105,7 +105,7 @@ class GUI:
         self.button_frame = tkinter.Frame(self.main_window)
 
         self.register_button = tkinter.Button(self.button_frame, text = "Register", command = self.register,
-                                               font = register_font, background = "blue", fg = "black", width = 30)
+                                               font = register_font, background = "#FFD300", fg = "black", width = 30)
 
         self.register_button.pack()
         self.button_frame.pack()
