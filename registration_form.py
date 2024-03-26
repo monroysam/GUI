@@ -71,7 +71,7 @@ class GUI:
 
         self.name_input_frame.pack()       
 
-        #---M/F SELECTION--- !!!FIX WHERE ONLY ONE CAN BE SELECTED!!!
+        #---M/F SELECTION---
         self.mf_frame = tkinter.Frame(self.main_window)
 
         self.radio_var = tkinter.IntVar()
