@@ -97,15 +97,18 @@ class GUI:
         self.terms.pack()
         self.subs.pack()
 
-        self.term_frame.pack(padx = (0, 22))
+        self.term_frame.pack(padx = (0, 28))
         self.sub_frame.pack(padx = (0, 60))
 
 
         #---REGISTER BUTTON---
         self.button_frame = tkinter.Frame(self.main_window)
 
-        self.register_button = tkinter.Button(self.button_frame, text = "Register", command = self.register,
-                                               font = register_font, background = "#FFD300", fg = "black", width = 30)
+        #self.register_button = tkinter.Button(self.button_frame, text = "Register", command = self.register,
+                                               #font = register_font, background = "red", fg = "black", width = 30)
+        self.register_button = tkinter.Button(self.button_frame, text="Register", command=self.register,
+                                       font=register_font, background="yellow", fg="black", width=30)
+
 
         self.register_button.pack()
         self.button_frame.pack()
